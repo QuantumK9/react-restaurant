@@ -1,2 +1,2 @@
-# react-restaurant
+# React Restaurant 
 Mediterranean food restaurant
