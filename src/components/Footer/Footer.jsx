@@ -11,7 +11,7 @@ import "./Footer.css";
 
 export default function Footer() {
   return (
-    <>
+    <div className="footer-wrapper">
       <Segment vertical style={{ padding: "5em 0em" }}>
         <Container>
           <Grid divided stackable>
@@ -67,10 +67,20 @@ export default function Footer() {
                 </List>
               </Grid.Row>
             </Grid.Column>
-            <Grid.Column width={4}>React Stuff</Grid.Column>
+            <Grid.Column width={4}>
+              <Grid.Row>
+                <Header as="h4" content="Developed By" />
+                <List>
+                  <List.Item as="a">Crystal</List.Item>
+                  <List.Item as="a">Ricky</List.Item>
+                  <List.Item as="a">Adama</List.Item>
+                  <List.Item as="a">Iraklis</List.Item>
+                </List>
+              </Grid.Row>
+            </Grid.Column>
           </Grid>
         </Container>
       </Segment>
-    </>
+    </div>
   );
 }

@@ -1,9 +1,9 @@
-/* @media only screen and (max-width: 1200px) and (min-width: 990px){
-  .ui.stackable.grid {
-    margin-left: 0rem !important;
-    margin-right: 0rem !important;
-  }
-} */
+.footer-wrapper {
+  background-color: #E5E3E4;
+  color: #469597;
+  padding: 20px;
+}
+
 .ui.grid {
   justify-content: center;
 }
@@ -11,12 +11,26 @@
 .row {
   margin-bottom: 2rem;
 }
-li {
+
+.header {
+  color: #469597 !important;
+  text-align:start;
+}
+
+a {
   list-style: none;
+  color: #469597 !important;
+  text-align: start;
 }
 
 @media only screen and (max-width: 1000px) {
   #email {
     font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header, a {
+    text-align: center;
   }
 }
