@@ -1,5 +1,8 @@
 import React from "react";
+import { Carousel } from "bootstrap";
 
 export default function Header() {
-  return <div>NavBar in here or something</div>;
+  return <div>
+    
+  </div>;
 }

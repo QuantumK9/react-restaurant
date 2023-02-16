@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-
+import 'semantic-ui-css/semantic.min.css'
+import { Button } from 'semantic-ui-react'
 function App() {
   return (
     <div className="App">
@@ -9,6 +10,11 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <div><Button>Click Here</Button></div>
+        <Button basic color='orange'>
+      Orange
+    </Button>
+
         <a
           className="App-link"
           href="https://reactjs.org"
