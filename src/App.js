@@ -1,11 +1,12 @@
+
 import './App.css';
-// import React, { Component } from "react"
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
-import MyNav from './components/Nav/nav'
-import Home from './pages/Home'
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import MyNav from './components/Nav/nav';
+import Home from './pages/Home';
 import Menu from "./pages/Menu";
 import Order from "./pages/Order";
-import Footer from './components/Footer'
+import Footer from "./components/Footer/Footer.jsx";
 
 function App() {
   return (
@@ -23,6 +24,6 @@ function App() {
     </div>
     </Router >
   );
-}
+};
 
 export default App;
