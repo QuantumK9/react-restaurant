@@ -1,0 +1,53 @@
+
+nav {
+    background:var(--color-bg-nav);
+    gap: 0.8rem;
+    display: flex;
+    justify-content:center;
+    border: solid black;
+    height: 6rem;
+    width: 100%;
+}
+
+.space-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1rem;
+
+}
+.space-logo img {
+    width: 10rem;
+    border-radius: 10rem;
+    overflow: hidden;
+    cursor:pointer;
+    margin-bottom: 1rem;
+    transition: all 400ms ease ;
+
+}
+
+nav a:hover {
+    background: rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    cursor:pointer;
+}
+
+
+nav link.active {
+    background: rgba(77, 181, 255, 0.4 );
+    
+}
+
+
+
+@media screen and ( max-width: 1024px) {
+    .nav {
+        width: 100rem;
+        display: flex;
+        justify-content: center;
+        padding-top: 10rem;
+
+
+    }
+}
+
