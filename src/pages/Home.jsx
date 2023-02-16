@@ -1,5 +1,6 @@
 import React from "react";
+import Hero from '../components/Hero.jsx' 
 
 export default function Home() {
-  return <div>Home - Landing Page</div>;
+  return (<div>< Hero/></div>);
 }
