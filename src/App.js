@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import Menu from "./pages/Menu";
 import Order from "./pages/Order";
 import Footer from "./components/Footer/Footer.jsx";
+import Slider from "./components/slider/slider"
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route exact path="/menu" component={Menu} />
           <Route exact path="/order" component={Order} />
         </Routes>
+        <Slider />
       </div>
       <div className="App">
       <Footer />
