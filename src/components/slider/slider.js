@@ -5,12 +5,11 @@ import './slider.css'
 import bar from './assets/bar.jpg'
 import side from './assets/interior-side.jpg'
 import interior from './assets/interior.jpg'
-import { Container } from 'semantic-ui-react'
+// import { Container } from 'semantic-ui-react'
 
 function slider() {
     return (
 <div>
-    <Container>
         <Carousel>
             <Carousel.Item>
                 <img
@@ -41,7 +40,6 @@ function slider() {
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
-        </Container>
 </div>
     );
 }
