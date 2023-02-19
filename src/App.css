@@ -1,4 +1,8 @@
 
+body {
+  background-color: #94252e;
+  background-image: linear-gradient(#94252e 5%, #94252e 15%, #94252e 60%);
+}
 
 .flex__center {
   display: flex;
@@ -46,10 +50,7 @@
     font-size: 14px;
   }
 }
-body {
-  background-color: #94252e;
-  background-image: linear-gradient(#94252e 5%, #94252e 15%, #94252e 60%);
-}
+
 
 @media screen and (max-width: 450px) {
   .p__opensans {
