@@ -4,7 +4,6 @@ nav {
     gap: 0.8rem;
     display: flex;
     justify-content:center;
-    border: solid black;
     height: 6rem;
     width: 100%;
 }
