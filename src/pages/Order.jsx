@@ -1,5 +1,9 @@
-import React from "react";
+import React from 'react'
 
-export default function Order() {
-  return <div>Order Form Page</div>;
+const Order = () => {
+  return (
+    <div>Order</div>
+  )
 }
+
+export default Order
