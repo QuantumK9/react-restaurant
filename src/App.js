@@ -1,17 +1,15 @@
-
-import './App.css';
+import "./App.css";
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import MyNav from './components/Nav/nav';
-import Home from './pages/Home';
+import MyNav from "./components/Nav/nav";
+import Home from "./pages/Home";
 import Menu from "./pages/Menu";
-import Order from "./pages/Order";
+import Order from "./pages/Contact";
 import Footer from "./components/Footer/Footer.jsx";
-import Slider from "./components/slider/slider"
 
 function App() {
   return (
-    <Router >
+    <Router>
       <div>
         <MyNav />
         <Switch>
@@ -19,16 +17,11 @@ function App() {
           <Route exact path="/menu" component={Menu} />
           <Route exact path="/order" component={Order} />
         </Switch>
-       
+
+        <Footer />
       </div>
-      <div className='App'>
-      <Slider />
-      </div>
-      <div className="App">
-      <Footer />
-    </div>
-    </Router >
+    </Router>
   );
-};
+}
 
 export default App;
