@@ -28,7 +28,7 @@ export default function Home() {
       <Segment basic style={{ fontFamily: "Glook", color: "#FFF979" }}>
         <Container>
           <h1
-            class="one column stackable ui grid centered"
+            className="one column stackable ui grid centered"
             style={{ fontFamily: "Corinthia" }}
           >
             <b>
@@ -36,7 +36,7 @@ export default function Home() {
             </b>
           </h1>
           <h2
-            class="one column stackable ui grid centered"
+            className="one column stackable ui grid centered"
             style={{ fontFamily: "Corinthia" }}
           >
             Mediterranean Bistro
@@ -44,7 +44,7 @@ export default function Home() {
           <br />
           <br />
           <Container>
-            <h3 class="one column stackable ui grid centered">
+            <h3 className="one column stackable ui grid centered">
               {" "}
               Welcome to Nonnas Bistro - your one-stop-shop for all things
               delicious and Mediterranean! Our family-owned and operated
@@ -54,15 +54,15 @@ export default function Home() {
             <br />
             <br />
           </Container>
-          <div class="one column stackable ui grid">
-            <div class="row">
+          <div className="one column stackable ui grid">
+            <div className="row">
               <div>
                 <div
-                  class="six wide computer column centered"
+                  className="six wide computer column centered"
                   style={{ display: "flex", justifyContent: "center" }}
                 >
                   <a style={{ position: "relative", zIndex: "1" }} href="#">
-                    <button class="ui yellow  basic button">
+                    <button className="ui yellow  basic button">
                       Explore More
                     </button>
                   </a>
@@ -71,7 +71,7 @@ export default function Home() {
             </div>
           </div>
           <div className="ui divider"></div>
-          <div class="one column stackable ui grid centered">
+          <div className="one column stackable ui grid centered">
             <h1 style={{ fontFamily: "Corinthia" }}> About</h1>
             <h3>
               {" "}
@@ -81,7 +81,7 @@ export default function Home() {
               down from generations and are rooted in the traditions of the
               Mediterranean.
             </h3>
-            <idv></idv>
+            <div></div>
           </div>
         </Container>
       </Segment>
@@ -90,11 +90,11 @@ export default function Home() {
         <br /> <br />
       </div>
       <div
-        class="ui one column stackable ui grid centered"
+        className="ui one column stackable ui grid centered"
         style={{ marginTop: "100" }}
       >
-        <button class="ui basic yellow button">Nonnas' Menu</button>
-        <button class="ui basic yellow button">Book Table</button>
+        <button className="ui basic yellow button">Nonnas' Menu</button>
+        <button className="ui basic yellow button">Book Table</button>
       </div>
       <div className="ui divider"></div>
     </div>

@@ -16,9 +16,8 @@ function MyNav() {
         />
       </div>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      <Navbar.Collapse classeName="pages">
+      <Navbar.Collapse className="pages">
         <Nav className="ml-auto clear">
-          <Link></Link>
           <Link to="/">
             <Nav.Link style={{ color: "#469597", listStyle: "none" }} as="div">
               Home{" "}
