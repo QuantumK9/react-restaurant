@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import MyNav from "./components/Nav/nav";
 import Home from "./pages/Home";
 import Menu from "./pages/Menu";
-import Order from "./pages/Contact";
+import Order from "./pages/Order";
 import Footer from "./components/Footer/Footer.jsx";
 
 function App() {
