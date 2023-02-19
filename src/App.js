@@ -4,9 +4,8 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import MyNav from "./components/Nav/nav";
 import Home from "./pages/Home";
 import Menu from "./pages/Menu";
-import Order from "./pages/Order";
+import Order from "./pages/Contact";
 import Footer from "./components/Footer/Footer.jsx";
-import Slider from "./components/slider/slider";
 
 function App() {
   return (
