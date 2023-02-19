@@ -1,11 +1,14 @@
-import "./App.css";
-import React from "react";
+import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import MyNav from "./components/Nav/nav";
+import Gallery from "./container/Gallery/Gallery";
+
 import Home from "./pages/Home";
-import Menu from "./pages/Menu";
-import Order from "./pages/Contact";
+import Menu from "./container/Menu/BestMenu";
+import Order from "./pages/Order";
 import Footer from "./components/Footer/Footer.jsx";
+
+import "./App.css";
 
 function App() {
   return (
@@ -16,8 +19,8 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/menu" component={Menu} />
           <Route exact path="/order" component={Order} />
+          <Route exact path="/gallery" component={Gallery} />
         </Switch>
-
         <Footer />
       </div>
     </Router>
