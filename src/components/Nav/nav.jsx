@@ -9,14 +9,17 @@ function MyNav() {
   return (
     <Navbar collapseOnSelect expand="lg" className="space">
       <div className="space-logo">
-        <img src={image} alt="logo" />
+        <img
+          src={image}
+          alt="logo"
+          style={{ position: "fixed", height: "10" }}
+        />
       </div>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse classeName="pages">
         <Nav className="ml-auto clear">
-
+          <Link></Link>
           <Link to="/">
-
             <Nav.Link style={{ color: "#469597", listStyle: "none" }} as="div">
               Home{" "}
             </Nav.Link>

@@ -18,7 +18,7 @@ export default function Footer() {
             <Grid.Column width={4}>
               <Grid.Row>
                 <Header as="h4" content="Follow Us" />
-                <List link>
+                <List link className="text-centered">
                   <List.Item as="a">Instagram</List.Item>
                   <List.Item as="a">Twitter</List.Item>
                   <List.Item as="a">Facebook</List.Item>
