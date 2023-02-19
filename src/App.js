@@ -6,7 +6,6 @@ import Home from "./pages/Home";
 import Menu from "./pages/Menu";
 import Order from "./pages/Order";
 import Footer from "./components/Footer/Footer.jsx";
-import Slider from "./components/slider/slider";
 
 function App() {
   return (
