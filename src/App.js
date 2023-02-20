@@ -7,13 +7,14 @@ import Home from './pages/Home';
 import Menu from "./pages/Menu";
 import Order from "./pages/Order";
 import Footer from "./components/Footer/Footer.jsx";
-// import Slider from "./components/slider/slider"
+// import Hero from "./components/Hero.jsx"
 
 function App() {
   return (
     <Router >
       <div>
         <MyNav />
+        {/* <Hero /> */}
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/menu" component={Menu} />

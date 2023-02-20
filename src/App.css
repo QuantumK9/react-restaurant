@@ -25,7 +25,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #FFF979;
 }
 
 @keyframes App-logo-spin {
@@ -38,6 +38,7 @@
 }
 
 body {
-  background-color: #94252e;
-  background-image: linear-gradient(  #94252e 5%,  #94252e 15%,   #94252e 60%);
+  background-image: url('../src/assets/heroimg.png');
+  background-color: linear-gradient(  #94252e 5%,  #94252e 15%,   #94252e 60%);
+ 
 }

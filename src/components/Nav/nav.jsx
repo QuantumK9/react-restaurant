@@ -10,15 +10,16 @@ function MyNav() {
 
         <Navbar collapseOnSelect expand="lg"  className="space">
             <div className='space-logo'>
-                <img src ={image} alt="logo" style={{position:'fixed', height:'10'}}/>
+                
+                <img src ={image} alt="logo"/>
             </div>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse classeName ='pages'>
                 <Nav className="ml-auto clear">
                     <Link></Link>
-                    <Link to="/home"><Nav.Link  style={{ color: "#469597", listStyle:'none' }} as="div">Home </Nav.Link></Link>
-                    <Link to="/menu"><Nav.Link style={{ color: "#469597" }} as="div">Menu</Nav.Link></Link>
-                    <Link to="/order now"><Nav.Link style={{ color: "black", fontFamily:'roboto' }} as="div">Order Now</Nav.Link></Link> 
+                    <Link to="/home"><Nav.Link  style={{ color: "white", listStyle:'none' }} as="div">Home </Nav.Link></Link>
+                    <Link to="/menu"><Nav.Link style={{ color: "white" }} as="div">Menu</Nav.Link></Link>
+                    <Link to="/order now"><Nav.Link className="ui yellow button small"style={{ fontFamily:'roboto' }} as="div">Order Now</Nav.Link></Link> 
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
