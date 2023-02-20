@@ -6,3 +6,11 @@
     opacity: 1;
     transition: 3000ms !important;
 }
+
+button.active {
+    display: none !important;
+}
+
+.carousel-indicators {
+    display: none !important;
+}

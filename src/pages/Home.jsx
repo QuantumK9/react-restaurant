@@ -1,5 +1,5 @@
 import React from "react";
-import Sliderpage from '../../src/components/Slider/slider';
+import Sliderpage from '../../src/components/Slider/Slider';
 import { Segment, Container } from 'semantic-ui-react';
 
 
