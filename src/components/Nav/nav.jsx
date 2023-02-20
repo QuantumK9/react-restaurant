@@ -3,7 +3,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav'
 import "./nav.css";
 import { Link } from 'react-router-dom';
-import image from '../../assets/image.png'
+import image from '../../assets/nonna-logo-light.png'
 
 function MyNav() {
     return (
@@ -17,9 +17,9 @@ function MyNav() {
             <Navbar.Collapse classeName ='pages'>
                 <Nav className="ml-auto clear">
                     <Link></Link>
-                    <Link to="/home"><Nav.Link  style={{ color: "white", listStyle:'none' }} as="div">Home </Nav.Link></Link>
-                    <Link to="/menu"><Nav.Link style={{ color: "white" }} as="div">Menu</Nav.Link></Link>
-                    <Link to="/order now"><Nav.Link className="ui yellow button small"style={{ fontFamily:'roboto' }} as="div">Order Now</Nav.Link></Link> 
+                    <Link to="/home"><Nav.Link  class='nav-link' style={{ color: "white", listStyle:'none', fontSize:'10 rem'}} as="div">Home </Nav.Link></Link>
+                    <Link to="/menu"><Nav.Link class='nav-link' style={{ color: "white"}} as="div">Menu</Nav.Link></Link>
+                    <Link to="/order now"><Nav.Link className="ui yellow button medium nav-link" as="div">Contact us</Nav.Link></Link> 
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

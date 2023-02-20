@@ -6,9 +6,9 @@ import { Segment, Container} from 'semantic-ui-react';
 export default function Home() {
   return (
     <div>
-      <Segment basic style={{ fontFamily: 'Glook', color: '#FFF979' }}>
+      <Segment basic style={{ fontFamily: 'Glook', color: '#EFCD77' }}>
         <Container>
-          <h1 className="one column stackable ui grid centered" style={{ fontFamily: 'Corinthia' }}><b><u>Nonnas'</u></b></h1>
+          <h1 className="one column stackable ui grid centered" style={{ fontFamily: 'Corinthia' }}><b><u>Nonna's</u></b></h1>
           <h2 className="one column stackable ui grid centered" style={{ fontFamily: 'Corinthia' }}>Mediterranean Bistro</h2>
           <br /><br />
           <Container>
@@ -28,7 +28,7 @@ export default function Home() {
         <br/>
       </Segment>
       <div>
-        <div className="ui grid" style={{ color: 'white', backgroundColor: '#94252e' }}>
+        <div className="ui grid" style={{ color: 'white', backgroundColor: '#5A1B0E' }}>
           <div className="one column stackable ui grid centered">
             <div className="ui divider"></div>
             <div className="sixteen wide column">
@@ -47,7 +47,7 @@ export default function Home() {
         <div>
         </div>
       </div>
-        <div className="ui grid" style={{ color: 'white', backgroundColor: '#94252e' }}>
+        <div className="ui grid" style={{ color: 'white', backgroundColor: '#5A1B0E' }}>
           <div className="one column stackable ui grid centered">
             <div className="sixteen wide column">
               <Container>

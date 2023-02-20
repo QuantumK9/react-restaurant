@@ -3,6 +3,7 @@ nav {
     
     background:transparent;
     gap: 0.8rem;
+    font-size: 5 rem;
     display: flex;
     justify-content:center;
     width: 100%;
@@ -31,6 +32,12 @@ nav a:hover {
     cursor:pointer;
 }
 
+.nav-link {
+display:flex;
+justify-content: center;
+align-items: center;
+ font-size: medium;
+}
 
 nav link.active {
     background: rgba(77, 181, 255, 0.4 );
