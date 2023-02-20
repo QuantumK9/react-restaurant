@@ -39,7 +39,9 @@ export default function Home() {
               <br />
             </div>
             <div className="ui divider"></div>
-            <Sliderpage />
+              <Container>
+              <Sliderpage />
+              </Container>
           </div>
         </div>
         <div>
