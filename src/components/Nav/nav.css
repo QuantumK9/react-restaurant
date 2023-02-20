@@ -1,10 +1,10 @@
-
 nav {
-    
-    background:transparent;
+
+    background: transparent;
     gap: 0.8rem;
+    font-size: 5 rem;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     width: 100%;
 }
 
@@ -15,31 +15,38 @@ nav {
     margin-top: 1rem;
 
 }
+
 .space-logo img {
     width: 10rem;
     border-radius: 10rem;
     overflow: hidden;
-    cursor:pointer;
+    cursor: pointer;
     margin-bottom: 1rem;
-    transition: all 400ms ease ;
+    transition: all 400ms ease;
 
 }
 
 nav a:hover {
     background: rgba(0, 0, 0, 0.3);
     text-decoration: none;
-    cursor:pointer;
+    cursor: pointer;
 }
 
+.nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+}
 
 nav link.active {
-    background: rgba(77, 181, 255, 0.4 );
-    
+    background: rgba(77, 181, 255, 0.4);
+
 }
 
 
 
-@media screen and ( max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .nav {
         width: 100rem;
         display: flex;
@@ -49,4 +56,3 @@ nav link.active {
 
     }
 }
-
