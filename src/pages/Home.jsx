@@ -1,6 +1,6 @@
 import React from "react";
 import Sliderpage from '../components/slider/slider.js';
-import { Segment, Container, Image } from 'semantic-ui-react';
+import { Segment, Container} from 'semantic-ui-react';
 // import Top from '../../src/assets/heroimg.png'
 export default function Home() {
   return (
@@ -24,6 +24,7 @@ export default function Home() {
             </div>
           </div>
         </Container>
+        <br/>
       </Segment>
       <div>
         <div className="ui grid" style={{ color: 'white', backgroundColor: '#94252e' }}>
@@ -37,18 +38,26 @@ export default function Home() {
               <br />
             </div>
             <div className="ui divider"></div>
-              <Sliderpage />
-            <br />
-            <div className="ui one column stackable ui grid centered" style={{ display: "flex", justifyContent: 'center' }}>
-              <button className="ui inverted yellow button">Nonna's Menu</button>
-              <button className="ui inverted yellow button">Book Table</button>
-            </div>
-            <br />
+            <Sliderpage />
           </div>
         </div>
         <div>
         </div>
       </div>
+        <div className="ui grid" style={{ color: 'white', backgroundColor: '#94252e' }}>
+          <div className="one column stackable ui grid centered">
+            <div className="sixteen wide column">
+              <Container>
+                <h1 className="one column stackable ui grid centered" style={{ fontFamily: 'Corinthia' }}>To know more ...</h1>
+                <div className="ui one column stackable ui grid centered" style={{ display: "flex", justifyContent: 'center' }}>
+                  <button className="ui inverted yellow button">Nonna's Menu</button>
+                  <button className="ui inverted yellow button">Book Table</button>
+                </div>
+              </Container>
+              <br />
+            </div>
+          </div>
+        </div>
     </div>
   )
 }
