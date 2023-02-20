@@ -2,6 +2,7 @@ import React from "react";
 import Sliderpage from '../components/slider/slider.js';
 import { Segment, Container} from 'semantic-ui-react';
 // import Top from '../../src/assets/heroimg.png'
+
 export default function Home() {
   return (
     <div>

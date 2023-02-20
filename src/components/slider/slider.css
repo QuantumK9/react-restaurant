@@ -1,8 +1,8 @@
 .carousel {
-    transition: 500ms !important;
+    transition: 3000ms !important;
 }
 
 .carousel-item {
     opacity: 1;
-    transition: 500ms !important;
+    transition: 3000ms !important;
 }

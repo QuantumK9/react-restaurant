@@ -4,7 +4,7 @@ import React from 'react';
 import bar from './assets/bar.jpg'
 import side from './assets/interior-side.jpg'
 import interior from './assets/interior.jpg'
-import style from './slider.css'
+import './slider.css'
 
 function Slider() {
     return (
