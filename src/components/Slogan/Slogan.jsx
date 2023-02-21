@@ -1,6 +1,5 @@
 import React from 'react';
-
-import logo from '../../assets/logo.jpg';
+import logo from '../../assets/image.png';
 
 const Slogan = ({ title }) => (
   <div style={{ marginBottom: '1rem'}}>

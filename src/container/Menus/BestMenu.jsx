@@ -1,11 +1,20 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Slogan from '../../components/Slogan/Slogan';
 import MenuItem from '../../components/Menuitem/MenuItem';
 import menu from '../../assets/menu.png';
-import w4 from '../../assets/w4.jpeg';
-import C4 from '../../assets/C4.jpeg';
+import menu01 from '../../assets/menu01.png';
+import menu02 from '../../assets/menu02.png';
+import menu03 from '../../assets/menu03.png';
 import './BestMenu.css';
+
+// import Swiper core and required modules
+import { Pagination, EffectFlip } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import "swiper/css/effect-flip";
+import "swiper/css/pagination";
 
 
 /*data to map through each article*/
@@ -73,13 +82,12 @@ const BestMenu = () => (
   <div className="best-specialMenu flex__center section__padding" id="menu">
     <div className="best-specialMenu-title">
       <Slogan title="Best Menu Good Appetite" />
-      <h1 className="headtext__cormorant">Tomorow's Free Menu  </h1>
+      <h1 className="headtext__cormorant">Today&apos;s Menu</h1>
     </div>
     <div className="best-specialMenu-menu">
       <div className="best-specialMenu-menu_wine  flex__center">
-        <img src={w4} alt="menu-img" />
         <p className="best-specialMenu-menu_heading">Wine & Beer</p>
-        <div className="best-specialMenu_menu_items">
+        <div className="best-specialMenu-menu_items">
 
           {/* Mapping through the wine array to render each component */}
 
@@ -88,29 +96,35 @@ const BestMenu = () => (
           ))}
         </div>
       </div>
-      <div className="best-specialMenu-menu_img">
-        <img src={menu} alt="menu-img" />
-      </div>
+
+             {/* Today's MENU SWIPER */}
+
+      <Swiper
+        // install Swiper modules
+        effect={"flip"}
+        spaceBetween={30}
+        slidesPerView={3}        
+        pagination={{ clickable: true }}
+        modules={[EffectFlip, Pagination]}
+      >
+        <SwiperSlide><img src={menu} alt="menu-img" />Paella </SwiperSlide>
+        <SwiperSlide><img src={menu01} alt="menu-img" />Spanakopita</SwiperSlide>
+        <SwiperSlide><img src={menu02} alt="menu-img" />Baklava</SwiperSlide>
+        <SwiperSlide><img src={menu03} alt="menu-img" />Arancini</SwiperSlide>
+
+      </Swiper>
+
       <div className="best-specialMenu-menu_cocktails  flex__center">
-        <img src={C4} alt="menu__img" />
         <p className="best-specialMenu-menu_heading">Cocktails</p>
 
         {/* Mapping through the cocktails array */}
 
-        <div className="best-specialMenu_menu_items">
+        <div className="best-specialMenu-menu_items">
           {cocktails.map((cocktail, index) => (
             <MenuItem key={cocktail.title + index} title={cocktail.title} price={cocktail.price} tags={cocktail.tags} />
           ))}
         </div>
       </div>
-    </div>
-
-    {/* view more dishes button */}
-
-    <div className="custom-button">
-      <Link to="/gallery" style={{transform : 'rotate(360deg)'}}>
-        <button type="button" >View More</button>
-      </Link>
     </div>
   </div>
 );

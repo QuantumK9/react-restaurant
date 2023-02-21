@@ -1,5 +1,4 @@
 import React from 'react';
-
 import './MenuItem.css';
 
 const MenuItem = ({ title, price, tags }) => (
@@ -7,8 +6,6 @@ const MenuItem = ({ title, price, tags }) => (
     <div className="best-menuitem-head">
       <div className="best-menuitem-name">
         <p className="p-slogan" style={{ color: '#DCCA87' }}>{title}</p>
-      
-
       </div>
       
       
