@@ -1,3 +1,7 @@
+.contact-hero {
+  height: 305px;
+}
+
 .left-section {
   padding-right: 2rem;
 }
@@ -7,7 +11,12 @@
 }
 
 .wrapper {
+  height: 990px;
+}
+.info-form-wrapper {
   background-color: #5A1B0E;
+  height: 990px;
+  /* margin-bottom: 0; */
 
 }
 
@@ -28,11 +37,14 @@
   min-height: 550px;
   background-color: #5A1B0E;
   margin: 0 auto;
-  padding-bottom: 2rem;
+  padding-top: 4rem;
 }
 
 @media screen and (max-width: 990px) {
 
+  .wrapper {
+      height: 1300px;
+    }
   .contact-wrapper {
     height: auto;
     flex-direction: column;
@@ -47,4 +59,10 @@
     padding-left: 0;
     padding-bottom: 2rem;
   }
+}
+
+@media screen and (max-width: 990px) {
+  .wrapper {
+      height: 1290px;
+    }
 }
