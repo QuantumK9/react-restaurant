@@ -24,12 +24,12 @@ function MyNav() {
               Home{" "}
             </Nav.Link>
           </Link>
-          <Link to="/menu">
+          <Link to="/menus">
             <Nav.Link class="nav-link" style={{ color: "white" }} as="div">
               Menu
             </Nav.Link>
           </Link>
-          <Link to="/contact">
+          <Link to="/order now">
             <Nav.Link className="ui yellow button medium nav-link" as="div">
               Contact us
             </Nav.Link>
