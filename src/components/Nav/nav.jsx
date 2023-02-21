@@ -29,7 +29,7 @@ function MyNav() {
               Menu
             </Nav.Link>
           </Link>
-          <Link to="/order now">
+          <Link to="/contact">
             <Nav.Link className="ui yellow button medium nav-link" as="div">
               Contact us
             </Nav.Link>
