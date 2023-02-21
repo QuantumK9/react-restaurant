@@ -12,9 +12,9 @@ form {
   background-color: white;
   /* border: 1px solid black; */
   border-radius: 5%;
-  box-shadow: 8px 10px 34px 0px rgba(239, 205, 119, 0.62);
-    -webkit-box-shadow: 8px 10px 34px 0px rgba(239, 205, 119, 0.62);
-    -moz-box-shadow: 8px 10px 34px 0px rgba(239, 205, 119, 0.62);
+  box-shadow: 11px 5px 18px 4px rgba(10, 10, 9, 0.9);
+    -webkit-box-shadow: 11px 5px 18px 4px rgba(10, 10, 9, 0.9);
+    -moz-box-shadow: 11px 5px 18px 4px rgba(10, 10, 9, 0.9);
 }
 
 #contact-form-header {

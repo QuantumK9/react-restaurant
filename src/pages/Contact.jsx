@@ -15,18 +15,23 @@ export default function Order() {
         className="contact-hero"
       >
         <Container>
-          <h1 className="one column stackable ui grid centered">Contact Us</h1>
+          <h1
+            className="one column stackable ui grid centered"
+            style={{ fontFamily: "Corinthia", fontSize: "4rem" }}
+          >
+            Contact Us
+          </h1>
           <h2
             className="one column stackable ui grid centered"
             style={{ fontFamily: "Corinthia" }}
           ></h2>
           <br />
           <br />
+          <br />
+          <br />
+          <br />
           <Container>
-            <h3 className="one column stackable ui grid centered">
-              {" "}
-              We'd love to hear from you !
-            </h3>
+            <h3 className="one column stackable ui grid centered"> </h3>
             <br />
             <br />
           </Container>
@@ -39,7 +44,14 @@ export default function Order() {
                     display: "flex",
                     justifyContent: "center",
                   }}
-                ></div>
+                >
+                  <h2
+                    className="one column stackable ui grid centered"
+                    style={{ fontFamily: "Corinthia", fontSize: "3rem" }}
+                  >
+                    We'd love to hear from you !
+                  </h2>
+                </div>
               </div>
             </div>
           </div>
