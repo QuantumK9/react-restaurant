@@ -1,6 +1,6 @@
 .best-specialMenu {
     flex-direction: column;
-    background:var(--color-light);
+    background:var(--color-bg-variant);
 }
 
 .best-specialMenu-title {
@@ -18,10 +18,12 @@
 }
 
 .best-specialMenu-menu_heading {
-    font-family:cursive;
-    font-weight: 400;
-    font-size: 3rem;
-    color:blanchedalmond;
+    font-family: var(--font-base);
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 58.5px;
+    letter-spacing: 0.04em;
+    color: var(--color-white);
 }
 
 .best-specialMenu-menu_wine,
@@ -30,19 +32,6 @@
     width: 100%;
     flex-direction: column;
 }
-.best-specialMenu-menu_wine{
-    width: 100%;
-}
-
-.best-specialMenu-menu_img {
-    width: 29rem;
-    margin: 0 2rem;
-}
-
-.best-specialMenu-menu_img img {
-    width: 100%;
-    height: auto;
-}
 
 .best-specialMenu_menu_items {
     display: flex;
@@ -50,22 +39,29 @@
     margin: 2rem 0;
     width: 100%;
 }
-.custom-button {
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
-    background-color:moccasin;
-    list-style: none;
-    
-}
 
-.custom-button:hover {
-    background: transparent;
-    border-radius: 2rem;
-    overflow: hidden;
-    transform: rotate(360deg);
-    transition: all 400ms ease;
-}
+/*Swiper Style */
+.swiper {
+    width: 300px;
+    height: 300px;
+    padding: 50px;
+  }
+  
+  
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+  
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+  
+
           /*Media queries*/
 
 

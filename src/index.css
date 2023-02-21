@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
+
 :root {
   --font-base: 'Gloock', serif;
   --color-bg-nav:#E5E3E4; 
   --color-bg-variant: #469597;
   --color-primary: #D0C9D0;
-  ;
   --color-primary-variant: rgba(77, 181, 255, 0.4);
   --color-white: #BBC6C8;
   --color-light: #6A7793;
+  --color-darkhaki: darkkhaki;
+  --color-black: #0C0C0C;
+
 
 
   --container-width-lg: 75%;
