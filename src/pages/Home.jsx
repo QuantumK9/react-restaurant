@@ -1,7 +1,8 @@
 import React from "react";
-
+import { Link } from 'react-router-dom';
 import Sliderpage from '../../src/components/Slider/Slider';
 import { Segment, Container } from 'semantic-ui-react';
+import Pagemenu from '../container/Menus/BestMenu'
 
 
 
@@ -44,7 +45,7 @@ export default function Home() {
                   className="six wide computer column centered"
                   style={{ display: "flex", justifyContent: "center" }}
                 >
-                  <a style={{ position: "relative", zIndex: "1" }} href="#">
+                  <a style={{ position: "relative", zIndex: "1" }} href="#about">
                     <button class="ui inverted yellow button">
                       Explore More
                     </button>
@@ -65,7 +66,7 @@ export default function Home() {
             <div className="ui divider"></div>
             <div className="sixteen wide column">
               <Container>
-                <h1
+                <h1 id="about"
                   className="one column stackable ui grid centered"
                   style={{ fontFamily: "Corinthia" }}
                 >
@@ -108,12 +109,12 @@ export default function Home() {
                 className="ui one column stackable ui grid centered"
                 style={{ display: "flex", justifyContent: "center" }}
               >
-                <button className="ui inverted yellow button">
+                <Link to="/Menu"><button className="ui inverted yellow button">
                   Nonna's Menu
-                </button>
-                <button className="ui inverted yellow button">
+                </button></Link>
+                <Link to="Contact"><button className="ui inverted yellow button">
                   Book Table
-                </button>
+                </button></Link>
               </div>
             </Container>
             <br />
