@@ -1,0 +1,14 @@
+.contact-info-wrapper {
+  border: 1px solid black !important;
+  text-align: start;
+  background-color: white !important;
+  padding: 2rem;
+}
+
+.contact-info-header {
+  font-size: 2rem;
+}
+
+.contact-info-text {
+  font-size: 1.5rem;
+}
