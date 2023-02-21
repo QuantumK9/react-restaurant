@@ -5,7 +5,7 @@ import Gallery from "./container/Gallery/Gallery";
 
 import Home from "./pages/Home";
 import Menu from "./container/Menu/BestMenu";
-import Order from "./pages/Order";
+import Contact from "./pages/Contact";
 import Footer from "./components/Footer/Footer.jsx";
 
 import "./App.css";
@@ -18,7 +18,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/menu" component={Menu} />
-          <Route exact path="/order" component={Order} />
+          <Route exact path="/contact" component={Contact} />
           <Route exact path="/gallery" component={Gallery} />
         </Switch>
         <Footer />
