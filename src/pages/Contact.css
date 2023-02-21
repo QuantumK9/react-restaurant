@@ -7,7 +7,7 @@
 }
 
 .wrapper {
-  background-color: white;
+  background-color: #5A1B0E;
 
 }
 
@@ -16,6 +16,7 @@
   text-align: center;
   padding-top: 3rem;
   padding-bottom: 3rem;
+  color: #EFCD77;
 }
 
 .contact-wrapper {
@@ -23,10 +24,11 @@
   justify-content: space-around;
   align-items: center;
   max-width: 70%;
-  height: 100vh;
+  /* height: 100vh; */
   min-height: 550px;
-  background-color: white;
+  background-color: #5A1B0E;
   margin: 0 auto;
+  padding-bottom: 2rem;
 }
 
 @media screen and (max-width: 990px) {

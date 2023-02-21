@@ -1,8 +1,12 @@
 .contact-info-wrapper {
-  border: 1px solid black !important;
+  /* border: 1px solid black !important; */
+  border-radius: 5%;
   text-align: start;
   background-color: white !important;
   padding: 2rem;
+  box-shadow: 8px 10px 34px 0px rgba(239, 205, 119, 0.62);
+    -webkit-box-shadow: 8px 10px 34px 0px rgba(239, 205, 119, 0.62);
+    -moz-box-shadow: 8px 10px 34px 0px rgba(239, 205, 119, 0.62);
 }
 
 .contact-info-header {

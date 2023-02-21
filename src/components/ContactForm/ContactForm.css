@@ -1,5 +1,6 @@
 .contact-form-wrapper {
   margin: 0;
+  /* border-radius: 5%; */
   /* padding: 2rem; */
   /* background-color: #fed43a; */
 }
@@ -9,7 +10,11 @@ form {
   margin: 0 auto;
   padding: 1rem 2rem;
   background-color: white;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  border-radius: 5%;
+  box-shadow: 8px 10px 34px 0px rgba(239, 205, 119, 0.62);
+    -webkit-box-shadow: 8px 10px 34px 0px rgba(239, 205, 119, 0.62);
+    -moz-box-shadow: 8px 10px 34px 0px rgba(239, 205, 119, 0.62);
 }
 
 #contact-form-header {
