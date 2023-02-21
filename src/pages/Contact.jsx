@@ -1,5 +1,8 @@
 import React from "react";
 import Slider from "../components/Slider/Slider";
+import ContactInfo from "../components/ContactInfo/ContactInfo";
+import ContactForm from "../components/ContactForm/ContactForm";
+import "./Contact.css";
 
 export default function Order() {
   return (
