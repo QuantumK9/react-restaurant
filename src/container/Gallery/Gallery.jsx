@@ -118,7 +118,7 @@ const Gallery = () => {
       </div>
 
  
-          <div>
+          <div className='row-menu' >
             <Container text>
               {/* <h3 class="ui header"></h3> */}
               <Header as='h2'>DISHES</Header>
@@ -140,7 +140,7 @@ const Gallery = () => {
                   </div>
                 </div>
                 <div className="row">
-                  <div class="column">
+                  <div className="column">
                     <div class="ui card">
                       <Header as='h3'><p>Garden Bar</p></Header>
                       <div className="text-center"><img src={gallery11} alt="img" /></div>
@@ -167,7 +167,7 @@ const Gallery = () => {
                       <div className="text-center"><img src={gallery13} alt="img" /></div>
                     </div>
                   </div>
-                  <div class="column">
+                  <div className="column">
                     <div class="ui card">
                       <Header as='h3'><p>Choco Cake</p></Header>
                       <div className="text-center"><img src={gallery14} alt="img" /></div>
@@ -175,13 +175,13 @@ const Gallery = () => {
                   </div>
                 </div>
                 <div className="row">
-                  <div class="column">
+                  <div className="column">
                     <div class="ui card">
                       <Header as='h3'><p>Rosa D</p></Header>
                       <div className="text-center"><img src={gallery15} alt="img" /></div>
                     </div>
                   </div>
-                  <div class="column">
+                  <div className="column">
                     <div class="ui card">
                       <Header as='h3'><p> CheeK Chese</p></Header>
                       <div className="text-center"><img src={gallery16} alt="img" /></div>
@@ -202,7 +202,7 @@ const Gallery = () => {
                       <div className="text-center"><img src={gallery17} alt="img" /></div>
                     </div>
                   </div>
-                  <div class="column">
+                  <div className="column">
                     <div class="ui card">
                       <Header as='h3'><p>Red Wine</p></Header>
                       <div className="text-center"><img src={gallery18} alt="img" /></div>
@@ -210,13 +210,13 @@ const Gallery = () => {
                   </div>
                 </div>
                 <div className="row">
-                  <div class="column">
+                  <div className="column">
                     <div class="ui card">
                       <Header as='h3'><p>Corona</p></Header>
                       <div className="text-center"><img src={gallery19} alt="img" /></div>
                     </div>
                   </div>
-                  <div class="column">
+                  <div className="column">
                     <div class="ui card">
                       <Header as='h3'><p> Liquor</p></Header>
                       <div className="text-center"><img src={gallery20} alt="img" /></div>
