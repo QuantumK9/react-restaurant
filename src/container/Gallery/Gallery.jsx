@@ -93,8 +93,12 @@ const Gallery = () => {
     <div className="best-gallery flex__center">
       <div className="best-gallery-content">
         <Slogan />
-        <h1 className="headtext__cormorant">Photo Gallery</h1>
-        <p className="p-slogan" style={{ color: 'var(--color-darkhaki)', marginTop: '2rem', fontWeight: 'bold' }}>Here, you can see a variety of dishes and drinks, and why not choose between the complexities of British culture, sometimes seamlessly blended together, over an Ethiopian-brewed coffee, a bowl of Senegalese black-eyed pea stew, or spicy Corean plantains?</p>
+        <h1 className="headtext__cormorant" style={{fontFamily:'Corinthia'}}>Photo Gallery</h1>
+        <p className="p-slogan ui two columns" style={{ color: 'var(--color-darkhaki)', marginTop: '2rem', fontWeight: 'bold', fontSize:'1.2rem' }}>
+          Here, you can see a variety of dishes and drinks
+             and why not choose between the complexities of British culture sometimes seamlessly blended together </p> 
+          <p className="p-slogan ui two columns" style={{ color: 'var(--color-darkhaki)', marginTop: '2rem', fontWeight: 'bold', fontSize:'1.2rem' }}>
+          Over an Ethiopian-brewed coffee a bowl of Senegalese black-eyed pea stew, or spicy Corean plantains?</p>
       </div>
       <br />
       <div className="best-gallery-images">
@@ -230,7 +234,7 @@ const Gallery = () => {
 
       <div className="custom-button">
         <Link to="/Menu" style={{ transform: 'rotate(360deg)' }}>
-          <button type="button" >View More</button>
+          <button type="button" className='ui inverted yellow button'>View More</button>
         </Link>
       </div>
     </div>
