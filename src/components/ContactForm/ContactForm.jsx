@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./ContactForm.css";
 
 const encode = (data) => {
@@ -11,7 +11,7 @@ class ContactForm extends React.Component {
     super(props);
     this.state = { name: "", email: "", message: "" };
   }
-  /* Here’s the juicy bit for posting the form submission */
+
   handleSubmit = (e) => {
     fetch("/", {
       method: "POST",
@@ -33,40 +33,42 @@ class ContactForm extends React.Component {
         onSubmit={this.handleSubmit}
       >
         <input type="hidden" name="form-name" value="contact" />
-        <p>
-          <label>
-            Your Name:{" "}
-            <input
-              type="text"
-              name="name"
-              value={name}
-              onChange={this.handleChange}
-            />
-          </label>
+        <h2 id="contact-form-header">Contact Form</h2>
+        <p id="contact-form-message">
+          Leave us your message and will get back to you.
         </p>
+
+        <label>
+          Your Name:{" "}
+          <input
+            type="text"
+            name="name"
+            value={name}
+            onChange={this.handleChange}
+          />
+        </label>
+
+        <label>
+          Your Email:{" "}
+          <input
+            type="email"
+            name="email"
+            value={email}
+            onChange={this.handleChange}
+          />
+        </label>
+
+        <label>
+          Message:{" "}
+          <textarea
+            name="message"
+            value={message}
+            onChange={this.handleChange}
+          />
+        </label>
+
         <p>
-          <label>
-            Your Email:{" "}
-            <input
-              type="email"
-              name="email"
-              value={email}
-              onChange={this.handleChange}
-            />
-          </label>
-        </p>
-        <p>
-          <label>
-            Message:{" "}
-            <textarea
-              name="message"
-              value={message}
-              onChange={this.handleChange}
-            />
-          </label>
-        </p>
-        <p>
-          <button type="submit">Send</button>
+          <button type="submit">Submit</button>
         </p>
       </form>
     );
