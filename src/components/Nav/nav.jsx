@@ -17,20 +17,20 @@ function MyNav() {
           <Link></Link>
           <Link to="/">
             <Nav.Link
-              class="nav-link"
-              style={{ color: "white", listStyle: "none", fontSize: "10 rem" }}
+              className="nav-link"
+              style={{ color: "white", listStyle: "none", fontSize: "10 rem" , display:'flex', justifyContent:'center', maxWidth:'100rem'}}
               as="div"
             >
               Home{" "}
             </Nav.Link>
           </Link>
           <Link to="/menus">
-            <Nav.Link class="nav-link" style={{ color: "white" }} as="div">
+            <Nav.Link className="nav-link" style={{ color: "white" , display:'flex', justifyContent:'center'}} as="div">
               Menu
             </Nav.Link>
           </Link>
           <Link to="/Contact">
-            <Nav.Link className="ui yellow button medium nav-link" as="div">
+            <Nav.Link className="ui yellow button medium  nav-link" as="div" style={{display:'flex', justifyContent:'center'}}>
               Contact us
             </Nav.Link>
           </Link>
