@@ -95,8 +95,10 @@ const Gallery = () => {
         <Slogan />
         <h1 className="headtext__cormorant" style={{fontFamily:'Corinthia'}}>Photo Gallery</h1>
         <p className="p-slogan ui two columns" style={{ color: 'var(--color-darkhaki)', marginTop: '2rem', fontWeight: 'bold', fontSize:'1.2rem' }}>
-          Here, you can see a variety of dishes and drinks
-             and why not choose between the complexities of British culture sometimes seamlessly blended together </p> 
+        At Nonna's Mediterranean Bistro, we offer a wide range of dishes that are bursting with flavors and aromas. From classic Greek gyros to Lebanese shawarmas, Turkish kebabs, and Italian pastas, there is something for everyone on our menu.
+
+Our menu features vegetarian and gluten-free options, and we are always happy to accommodate any dietary requirements you may have. All of our dishes are made to order with fresh ingredients and are cooked to perfection.
+</p> 
           <p className="p-slogan ui two columns" style={{ color: 'var(--color-darkhaki)', marginTop: '2rem', fontWeight: 'bold', fontSize:'1.2rem' }}>
           Over an Ethiopian-brewed coffee a bowl of Senegalese black-eyed pea stew, or spicy Corean plantains?</p>
       </div>
