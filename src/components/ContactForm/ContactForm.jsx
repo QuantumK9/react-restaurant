@@ -37,7 +37,6 @@ class ContactForm extends React.Component {
         <p id="contact-form-message">
           Leave us your message and will get back to you.
         </p>
-        {/* <p> */}
         <label>
           Your Name:{" "}
           <input
@@ -47,8 +46,7 @@ class ContactForm extends React.Component {
             onChange={this.handleChange}
           />
         </label>
-        {/* </p> */}
-        {/* <p> */}
+
         <label>
           Your Email:{" "}
           <input
@@ -58,8 +56,7 @@ class ContactForm extends React.Component {
             onChange={this.handleChange}
           />
         </label>
-        {/* </p> */}
-        {/* <p> */}
+
         <label>
           Message:{" "}
           <textarea
@@ -68,7 +65,7 @@ class ContactForm extends React.Component {
             onChange={this.handleChange}
           />
         </label>
-        {/* </p> */}
+
         <p>
           <button type="submit">Submit</button>
         </p>
