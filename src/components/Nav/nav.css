@@ -46,11 +46,19 @@ nav link.active {
 }
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    a {
+        float: right;
+    }
+}
+
+
+@media screen and (max-width: 1024px)  {
     .nav {
-        width: 100rem;
+        width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content:center;
+        align-items: center;
         padding-top: 10rem;
         
 
