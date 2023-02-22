@@ -1,6 +1,6 @@
 .best-specialMenu {
     flex-direction: column;
-    background:var(--color-bg-variant);
+    background-color: #5A1B0E;
 }
 
 .best-specialMenu-title {

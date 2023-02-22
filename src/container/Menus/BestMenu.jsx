@@ -77,6 +77,8 @@ const cocktails = [
     tags: 'Gin | Sweet Vermouth | Campari | Orange garnish',
   },];
 
+  
+
 
 /*Fonction bestMenu*/
 
