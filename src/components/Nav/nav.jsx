@@ -7,11 +7,11 @@ import image from "../../assets/nonna-logo-light.png";
 
 function MyNav() {
   return (
-    <Navbar collapseOnSelect expand="lg" className="space">
+    <Navbar collapseOnSelect expand="lg" className="space ">
       <div className="space-logo">
         <img src={image} alt="logo" />
       </div>
-      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" className="bg-light" />
       <Navbar.Collapse classeName="pages">
         <Nav className="ml-auto clear">
           <Link></Link>
