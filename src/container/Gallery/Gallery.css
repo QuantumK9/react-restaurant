@@ -165,12 +165,39 @@
         max-width: 100%;
         margin: 5rem 0;
     }
+
+    .column {
+        display: flex;
+        text-align: center;
+    }
+
+    .ui.card {
+        display: inline-block;
+    }
+
+    .row-menu h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 
 @media screen and (max-width: 850px) {
     .best-gallery {
         padding: 4rem 0 4rem 4rem;
     }
+
+    .column {
+        display: flex;
+        text-align: center;
+    }
+
+    .ui.card {
+        display: inline-block;
+    }
+
+
 }
 
 @media screen and (max-width: 650px) {
@@ -186,4 +213,15 @@
         min-width: 240px;
         height: 320px;
     }
+
+    .column {
+        display: flex;
+        text-align: center;
+    }
+
+    .ui.card {
+        display: inline-block;
+    }
+
+
 }

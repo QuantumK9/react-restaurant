@@ -38,6 +38,7 @@ body {
 }
 
 
+
 /* Media Queries*/
 @media screen and (max-width: 1150px) {
   .app__wrapper {
@@ -84,5 +85,6 @@ body {
     font-size: 45px;
     line-height: 70px;
   }
+
 }
 
