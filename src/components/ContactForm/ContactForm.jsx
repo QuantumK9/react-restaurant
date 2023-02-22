@@ -1,27 +1,77 @@
 import React from "react";
-import { useState } from "react";
-import { useForm } from "react-hook-form";
 import "./ContactForm.css";
 
-export default function ContactForm() {
-  const { register, handleSubmit } = useForm();
-  const [data, setData] = useState("");
-  return (
-    <div className="contact-form-wrapper">
-      <form onSubmit={handleSubmit((data) => setData(JSON.stringify(data)))}>
+const encode = (data) => {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+};
+class ContactForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { name: "", email: "", message: "" };
+  }
+
+  handleSubmit = (e) => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...this.state }),
+    })
+      .then(() => alert("Success!"))
+      .catch((error) => alert(error));
+    e.preventDefault();
+  };
+  handleChange = (e) => this.setState({ [e.target.name]: e.target.value });
+  render() {
+    const { name, email, message } = this.state;
+    return (
+      <form
+        name="contact"
+        netlify-honeypot="bot-field"
+        data-netlify="true"
+        onSubmit={this.handleSubmit}
+      >
+        <input type="hidden" name="form-name" value="contact" />
         <h2 id="contact-form-header">Contact Form</h2>
         <p id="contact-form-message">
           Leave us your message and will get back to you.
         </p>
-        <label>First Name</label>
-        <input {...register("firstName")} placeholder="First name" />
-        <label>Last Name</label>
-        <input {...register("lastName")} placeholder="Last name" />
-        <label>Message:</label>
-        <textarea {...register("message")} placeholder="Your message..." />
-        <p>{data}</p>
-        <input type="submit" />
+        <label>
+          Your Name:{" "}
+          <input
+            type="text"
+            name="name"
+            value={name}
+            onChange={this.handleChange}
+          />
+        </label>
+
+        <label>
+          Your Email:{" "}
+          <input
+            type="email"
+            name="email"
+            value={email}
+            onChange={this.handleChange}
+          />
+        </label>
+
+        <label>
+          Message:{" "}
+          <textarea
+            name="message"
+            value={message}
+            onChange={this.handleChange}
+          />
+        </label>
+
+        <p>
+          <button type="submit">Submit</button>
+        </p>
       </form>
-    </div>
-  );
+    );
+  }
 }
+
+export default ContactForm;

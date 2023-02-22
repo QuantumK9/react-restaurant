@@ -1,8 +1,6 @@
 .contact-form-wrapper {
   margin: 0;
-  /* border-radius: 5%; */
-  /* padding: 2rem; */
-  /* background-color: #fed43a; */
+  
 }
 
 form {
@@ -10,11 +8,10 @@ form {
   margin: 0 auto;
   padding: 1rem 2rem;
   background-color: white;
-  /* border: 1px solid black; */
   border-radius: 5%;
   box-shadow: 11px 5px 18px 4px rgba(10, 10, 9, 0.9);
-    -webkit-box-shadow: 11px 5px 18px 4px rgba(10, 10, 9, 0.9);
-    -moz-box-shadow: 11px 5px 18px 4px rgba(10, 10, 9, 0.9);
+  -webkit-box-shadow: 11px 5px 18px 4px rgba(10, 10, 9, 0.9);
+  -moz-box-shadow: 11px 5px 18px 4px rgba(10, 10, 9, 0.9);
 }
 
 #contact-form-header {
@@ -31,7 +28,7 @@ form {
     sans-serif;
   text-align: center;
   color: black;
-  padding-bottom: 2rem;
+  /* padding-bottom: 2rem; */
 }
 
 textarea,
@@ -53,7 +50,7 @@ label,
 section>label {
   line-height: 2;
   text-align: left;
-  display: block;
+  display: block !important;
   margin-bottom: 8px;
   margin-top: 10px;
   color: black;
@@ -61,7 +58,7 @@ section>label {
   font-weight: 200;
 }
 
-input[type="submit"]
+button[type="submit"]
  {
   position: relative;
   background: #94252e;
@@ -80,19 +77,20 @@ input[type="submit"]
   transition: 0.3s all;
 }
 
-input[type="submit"]:hover {
+button[type="submit"]:hover {
   opacity: 0.7;
   color: grey;
 }
 
-input[type="submit"]:active {
+button[type="submit"]:active {
   transition: 0.3s all;
   top: 2px;
 }
 
 @media screen and (max-width: 575px) {
+  
   form {
-    margin: 0 auto;
+    margin: 0 ;
     padding: 1rem 2rem;
     outline: 5px solid white;
   }
@@ -102,7 +100,7 @@ input[type="submit"]:active {
     margin-bottom: 0.2rem;
   }
  
-  input[type="submit"] {
+  button[type="submit"] {
     margin: 40px auto;
     padding: 5px;
     font-size: 12px;
