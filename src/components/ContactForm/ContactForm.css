@@ -28,7 +28,7 @@ form {
     sans-serif;
   text-align: center;
   color: black;
-  padding-bottom: 2rem;
+  /* padding-bottom: 2rem; */
 }
 
 textarea,
@@ -50,7 +50,7 @@ label,
 section>label {
   line-height: 2;
   text-align: left;
-  display: block;
+  display: block !important;
   margin-bottom: 8px;
   margin-top: 10px;
   color: black;
@@ -88,8 +88,9 @@ button[type="submit"]:active {
 }
 
 @media screen and (max-width: 575px) {
+  
   form {
-    margin: 0 auto;
+    margin: 0 ;
     padding: 1rem 2rem;
     outline: 5px solid white;
   }
