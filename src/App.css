@@ -2,6 +2,8 @@
 body {
   background-color: #5A1B0E;
   background-image: url('../src/assets/heroimg.png');
+  background-size: cover;
+  height: 80vh;
 }
 .section__padding {
   padding: 4rem 6rem;

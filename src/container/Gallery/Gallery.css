@@ -3,7 +3,7 @@
     display: block;
     align-items: center;
     justify-content: center;
-    background: var(--color-black);
+    background-color: #5A1B0E;
     padding: 4rem 0 4rem 6rem;
 }
 
@@ -11,7 +11,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 5rem;
+    height: 9rem;
 }
 
 .text-center {
